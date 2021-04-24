@@ -4,7 +4,7 @@ var score = 0;
 var userName = readlineSync.question("Let's start with your name : ");
 console.log("Hi "+userName+", good to see you !\n");
 
-console.log("Let's play a game which will test you knowledge about India !\n")
+console.log("Let's play a fun game which will test your knowledge about India !\n")
 
 console.log("------------------------------------------------");
 console.log("Game rule:\n1) +1 point for correct answer\n2) -1 for wrong answer! \n")
@@ -30,6 +30,11 @@ var questions = [
     question: "Which place in India is also known as the “Land of Rising Sun”? ",
     options:"a. Sikkim\nb. Arunachal Pradesh\nc. Karnataka\nd. Gujarat",
     answer:"b"
+  },
+  {
+    question: "Who is popularly known as the “Iron Man” of India? ",
+    options:"a. Lal Bahadur Shastri\nb. Sardar Vallabh Bhai Patel\nc. Mahatma Gandhi\nd. Dr. B.R Ambedkar",
+    answer:"b"
   }
 ];
 
@@ -50,5 +55,5 @@ for(var i=0; i<questions.length;i++){
   console.log(">>> Current score: "+score+"\n");  
 }
 
-console.log("Thank you for playing the game! Your score is "+score);
+console.log("Thank you for playing the game! Your overall score is "+score);
 
